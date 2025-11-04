@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimi Teknik | Kontraktor AC - Disiplin & Garansi Hasil (Mobile)</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Mobile-Optimized Dark Theme & Electric Cyan Accent */
+        :root {
+            --dark-bg: #030712; /* Charcoal Black */
+            --charcoal: #1F2937; /* Deep Slate */
+            --accent-cyan: #06B6D4; /* Cyan 500 - High Visibility Accent */
+            --light-text: #F9FAFB;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            scroll-behavior: smooth;
+        }
+
+        /* Fixed Footer CTA for Mobile (Always visible WhatsApp and Email Buttons) */
+        .fixed-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 50;
+            padding: 12px;
+            background-color: #030712; /* Match body BG */
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Main CTA Button Style (WhatsApp) */
+        .cta-button-wa {
+            /* WhatsApp Green */
+            background-color: #25D366; 
+            color: var(--dark-bg);
+            font-weight: 800;
+            padding: 1rem 1.5rem;
+            border-radius: 9999px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+            flex-grow: 1; 
+            font-size: 1.125rem;
+            text-align: center;
+        }
+        .cta-button-wa:hover {
+            background-color: #1DA851;
+            transform: translateY(-2px);
+        }
+
+        /* Secondary CTA Button Style (Email) */
+        .cta-button-email {
+            background-color: var(--accent-cyan);
+            color: var(--dark-bg);
+            font-weight: 800;
+            padding: 1rem;
+            border-radius: 9999px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(6, 182, 212, 0.4);
+            flex-grow: 0; 
+            width: 60px; 
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cta-button-email:hover {
+            background-color: #0E7490;
+            transform: translateY(-2px);
+        }
+
+        /* Title Styling */
+        .section-title {
+            font-size: 1.75rem; 
+            font-weight: 800;
+            position: relative;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .section-title span {
+            color: var(--accent-cyan);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--accent-cyan);
+            margin: 10px auto 0; 
+            border-radius: 2px;
+        }
+
+        /* General Card Style */
+        .feature-card {
+            background-color: var(--charcoal);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-cyan);
+            margin-bottom: 16px;
+        }
+
+        /* Hero Text Adaptation */
+        .hero-text {
+            font-size: 2.5rem; 
+        }
+        @media (min-width: 640px) {
+            .hero-text {
+                font-size: 4rem; 
+            }
+            .section-title {
+                font-size: 2.5rem;
+            }
+            /* Adjust fixed CTA for desktop/tablet */
+            .fixed-cta {
+                position: static;
+                padding: 0;
+                box-shadow: none;
+                justify-content: center;
+                margin-top: 2rem;
+            }
+            .cta-button-wa {
+                width: auto;
+                flex-grow: 0;
+            }
+            .cta-button-email {
+                width: auto;
+                flex-grow: 0;
+                padding: 1rem 1.5rem;
+                height: auto;
+                margin-left: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="max-w-xl mx-auto p-4 pb-28 sm:pb-4"> 
+
+    <!-- 1. HEADER (Minimalis) -->
+    <nav class="flex justify-center items-center py-6 border-b border-gray-700 mb-8">
+        <div class="text-3xl font-black text-white tracking-widest">
+            <span style="color: var(--accent-cyan);">KIMI</span> TEKNIK
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION: DIRECT PUNCH & CTA -->
+    <header class="text-center mb-12">
+        <h1 class="hero-text font-black leading-tight mb-4 px-2">
+            KONTRAKTOR AC. 
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-cyan-500">DISIPLIN HARGA MATI.</span>
+        </h1>
+        <p class="text-lg text-gray-300 px-2">
+            Kami adalah spesialis yang fokus menghilangkan risiko keterlambatan dan *trouble* berulang pada proyek AC Anda.
+        </p>
+    </header>
+
+    <!-- 3. SECTION: CORE VALUE / GARANSI -->
+    <section class="py-6 mb-10">
+        <h2 class="section-title">3 Pilar <span>Garansi Kimi</span></h2>
+        
+        <!-- Card 1: Discipline -->
+        <div class="feature-card">
+            <h3 class="text-xl font-bold mb-1 flex items-center text-cyan-400">
+                <i class="fas fa-clock mr-3 text-2xl"></i> 1. KETEPATAN WAKTU MUTLAK
+            </h3>
+            <p class="text-gray-400 text-sm">Jaminan kepatuhan 100% pada *timeline*. Proyek Anda tidak akan terhambat karena urusan AC.</p>
+        </div>
+
+        <!-- Card 2: Specialization -->
+        <div class="feature-card">
+            <h3 class="text-xl font-bold mb-1 flex items-center text-cyan-400">
+                <i class="fas fa-cogs mr-3 text-2xl"></i> 2. SPESIALISASI MURNI
+            </h3>
+            <p class="text-gray-400 text-sm">Hanya menangani AC (Split, Cassette, VRF). Diagnosis lebih akurat dan kualitas instalasi standar pabrik.</p>
+        </div>
+
+        <!-- Card 3: Accountability -->
+        <div class="feature-card">
+            <h3 class="text-xl font-bold mb-1 flex items-center text-cyan-400">
+                <i class="fas fa-user-shield mr-3 text-2xl"></i> 3. AKUNTABILITAS PIMPINAN
+            </h3>
+            <p class="text-gray-400 text-sm">Pengawasan langsung oleh Pemilik. Reputasi kami adalah garansi hasil Anda.</p>
+        </div>
+    </section>
+
+    <!-- 4. SECTION: CLIENT FOCUS -->
+    <section class="py-6 mb-10 text-center">
+        <h2 class="section-title">Kami Melayani Proyek <span>Komersial & Industrial</span></h2>
+        <div class="grid grid-cols-2 gap-4 text-center mt-6">
+            <div class="p-3 bg-charcoal rounded-lg border-b-2 border-cyan-500">
+                <i class="fas fa-building text-3xl mb-1 text-cyan-400"></i>
+                <p class="text-sm font-semibold">Perkantoran</p>
+            </div>
+            <div class="p-3 bg-charcoal rounded-lg border-b-2 border-cyan-500">
+                <i class="fas fa-warehouse text-3xl mb-1 text-cyan-400"></i>
+                <p class="text-sm font-semibold">Pabrik & Gudang</p>
+            </div>
+            <div class="p-3 bg-charcoal rounded-lg border-b-2 border-cyan-500">
+                <i class="fas fa-hospital text-3xl mb-1 text-cyan-400"></i>
+                <p class="text-sm font-semibold">Fasilitas Kesehatan</p>
+            </div>
+            <div class="p-3 bg-charcoal rounded-lg border-b-2 border-cyan-500">
+                <i class="fas fa-school text-3xl mb-1 text-cyan-400"></i>
+                <p class="text-sm font-semibold">Sekolah/Kampus</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. CONTACT INFO (Minimalist) -->
+    <section id="contact" class="py-10 text-center border-t border-gray-800">
+        <p class="text-gray-400 text-lg mb-4">
+            Siap memulai proyek? Hubungi kami sekarang melalui jalur cepat:
+        </p>
+        <!-- Tombol CTA tambahan untuk desktop/tablet -->
+        <div class="hidden sm:flex justify-center items-center">
+             <!-- WhatsApp CTA Button (Desktop/Tablet) -->
+            <a href="https://wa.me/6285810636479" target="_blank" class="cta-button-wa text-xl">
+                <i class="fab fa-whatsapp mr-3"></i> CHAT VIA WHATSAPP
+            </a>
+            <!-- Email CTA Button (Desktop/Tablet) -->
+            <a href="mailto:kimiteknikac@gmail.com" target="_blank" class="cta-button-email">
+                <i class="fas fa-envelope text-xl"></i> EMAIL RESMI
+            </a>
+        </div>
+        
+        <p class="text-gray-500 text-sm mt-4">
+            <i class="fas fa-envelope mr-1 text-cyan-400"></i> kimiteknikac@gmail.com
+        </p>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="text-center py-4 text-gray-600 text-xs">
+        <p>Kimi Teknik © 2025. Spesialis Kontraktor AC.</p>
+    </footer>
+
+</div>
+
+<!-- FIXED CTA BUTTONS (Paling Penting untuk Mobile) -->
+<div class="fixed-cta sm:hidden"> 
+    <!-- WhatsApp CTA Button -->
+    <a href="https://wa.me/6285810636479" target="_blank" class="cta-button-wa">
+        <i class="fab fa-whatsapp text-xl mr-2"></i> WHATSAPP
+    </a>
+    <!-- Email CTA Button -->
+    <a href="mailto:kimiteknikac@gmail.com" target="_blank" class="cta-button-email">
+        <i class="fas fa-envelope text-2xl"></i> 
+    </a>
+</div>
+
+</body>
+</html>
