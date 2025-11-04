@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kimi Teknik | Jasa Teknik AC Komersial, Industrial dan Residensial, Bergaransi</title>
-    <!-- Pastikan kode unik GSC Anda sudah ada di sini -->
     <meta name="google-site-verification" content="84FHJN3X1uVgL68k8Ls4xnoXPtyVcKnfYln2_PNOd_s" />
 
     <!-- 2. SEO OPTIMIZATION: META DESCRIPTION (Teks ini muncul di Google Search) -->
@@ -150,7 +149,6 @@
     </style>
 
     <!-- 3. SEO OPTIMIZATION: SCHEMA MARKUP (JSON-LD) -->
-    <!-- Ini membantu Google memahami bahwa Kimi Teknik adalah sebuah Organisasi/Bisnis -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -167,7 +165,6 @@
       },
       "sameAs": [
         "https://wa.me/6285810636479"
-        // Tambahkan link media sosial Kimi Teknik di sini (Facebook, Instagram, LinkedIn)
       ]
     }
     </script>
@@ -176,11 +173,17 @@
 
 <div class="max-w-xl mx-auto p-4 pb-28 sm:pb-4"> 
 
-    <!-- 1. HEADER (Minimalis) -->
+    <!-- 1. HEADER (Logo Gambar Dipasang di Sini) -->
     <nav class="flex justify-center items-center py-6 border-b border-gray-700 mb-8">
-        <div class="text-3xl font-black text-white tracking-widest">
-            <span style="color: var(--accent-cyan);">KIMI</span> TEKNIK
-        </div>
+        <!-- Menggunakan tag img untuk memuat logo -->
+        <a href="#hero" class="block">
+            <img 
+                src="logo-kimi.png" 
+                alt="Logo Kimi Teknik" 
+                class="h-10 sm:h-12 w-auto" 
+                onerror="this.onerror=null; this.src='https://placehold.co/150x48/06B6D4/030712?text=KIMI+TEKNIK';"
+            >
+        </a>
     </nav>
 
     <!-- 2. HERO SECTION: DIRECT PUNCH & CTA -->
@@ -195,7 +198,7 @@
     </header>
 
     <!-- 3. SECTION: CORE VALUE / GARANSI -->
-    <section class="py-6 mb-10">
+    <section class="py-6 mb-8">
         <h2 class="section-title">3 Pilar <span>Garansi Kimi</span></h2>
         
         <!-- Card 1: Discipline -->
@@ -222,38 +225,73 @@
             <p class="text-gray-400 text-sm">Pengawasan langsung oleh Pimpinan Kimi Teknik. Reputasi kami adalah garansi bagi Anda.</p>
         </div>
     </section>
+    
+    <!-- BARU: TOMBOL GALERI HASIL KERJA -->
+    <div class="text-center mb-10 border-b border-gray-800 pb-10">
+        <h3 class="text-lg font-semibold text-gray-300 mb-4">
+            Lihat hasil kerja kami yang disiplin dan detail.
+        </h3>
+        <!-- Link ke galeri.html yang akan Anda buat di GitHub -->
+        <a href="galeri.html" class="gallery-button">
+            <i class="fas fa-images mr-2"></i> LIHAT GALERI HASIL KERJA
+        </a>
+    </div>
 
-    <!-- 4. SECTION: CLIENT FOCUS -->
+    <!-- 4. SECTION: CLIENT FOCUS (6 Kategori Simetris) -->
     <section class="py-6 mb-10 text-center">
         <h2 class="section-title">Kami Melayani Proyek <span>Komersial, Industrial, Residensial</span></h2>
-        <div class="grid grid-cols-2 gap-4 text-center mt-6">
+        <!-- Menggunakan grid 2 kolom di mobile dan 3 kolom di desktop (sm:grid-cols-3) agar simetris -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center mt-6">
+            
+            <!-- Kategori 1: Perkantoran -->
             <div class="p-3 bg-charcoal rounded-lg border-b-2 border-cyan-500">
                 <i class="fas fa-building text-3xl mb-1 text-cyan-400"></i>
                 <p class="text-sm font-semibold">Perkantoran</p>
             </div>
+            
+            <!-- Kategori 2: Pabrik & Gudang -->
             <div class="p-3 bg-charcoal rounded-lg border-b-2 border-cyan-500">
                 <i class="fas fa-warehouse text-3xl mb-1 text-cyan-400"></i>
                 <p class="text-sm font-semibold">Pabrik & Gudang</p>
             </div>
+            
+            <!-- Kategori 3: Fasilitas Kesehatan -->
             <div class="p-3 bg-charcoal rounded-lg border-b-2 border-cyan-500">
                 <i class="fas fa-hospital text-3xl mb-1 text-cyan-400"></i>
                 <p class="text-sm font-semibold">Fasilitas Kesehatan</p>
             </div>
+            
+            <!-- Kategori 4: Sekolah/Kampus -->
             <div class="p-3 bg-charcoal rounded-lg border-b-2 border-cyan-500">
                 <i class="fas fa-school text-3xl mb-1 text-cyan-400"></i>
                 <p class="text-sm font-semibold">Sekolah/Kampus</p>
             </div>
+            
+            <!-- Kategori 5: Pusat Retail (Mall, Supermarket, dll) -->
             <div class="p-3 bg-charcoal rounded-lg border-b-2 border-cyan-500">
-                <i class="fas fa-house text-3xl mb-1 text-cyan-400"></i>
-                <p class="text-sm font-semibold">Perumahan</p>
+                <i class="fas fa-store text-3xl mb-1 text-cyan-400"></i>
+                <p class="text-sm font-semibold">Pusat Retail</p>
+            </div>
+
+            <!-- Kategori 6: Tempat Sosial/Publik (Ibadah, Balai Pertemuan, dll) -->
+            <div class="p-3 bg-charcoal rounded-lg border-b-2 border-cyan-500">
+                <i class="fas fa-handshake text-3xl mb-1 text-cyan-400"></i>
+                <p class="text-sm font-semibold">Tempat Sosial/Publik</p>
             </div>
         </div>
+        
+        <!-- Kategori Residensial sebagai catatan tambahan, di luar grid 6 utama -->
+        <div class="mt-4 p-3 bg-charcoal rounded-lg border-b-2 border-cyan-500 max-w-xs mx-auto">
+            <i class="fas fa-house text-3xl mb-1 text-cyan-400"></i>
+            <p class="text-sm font-semibold">Perumahan & Hunian Pribadi</p>
+        </div>
+
     </section>
 
     <!-- 5. CONTACT INFO (Minimalist) -->
     <section id="contact" class="py-10 text-center border-t border-gray-800">
         <p class="text-gray-400 text-lg mb-4">
-            Siap memulai proyek? Hubungi kami sekarang melalui layanan hotline. 
+            Siap memulai proyek ? Hubungi kami sekarang melalui layanan hotline. 
         </p>
         <!-- Tombol CTA tambahan untuk desktop/tablet -->
         <div class="hidden sm:flex justify-center items-center">
@@ -267,8 +305,9 @@
             </a>
         </div>
         
-        <!-- Baris tampilan email dihapus di sini -->
-
+        <p class="text-gray-500 text-sm mt-4">
+            <i class="fas fa-envelope mr-1 text-cyan-400"></i> kimiteknikac@gmail.com
+        </p>
     </section>
     
     <!-- FOOTER -->
