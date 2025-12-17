@@ -173,26 +173,100 @@
         }
     </style>
 
-    <!-- 3. SEO OPTIMIZATION: SCHEMA MARKUP (JSON-LD) -->
-    <script type="application/ld+json">
+    <!-- Kimi Teknik AC - Schema Markup Spesifik Kecamatan Jakarta -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  "name": "Kimi Teknik AC",
+  "alternateName": [
+    "Service AC Terdekat Jakarta",
+    "Service AC Terdekat Kemayoran",
+    "Jasa Service AC Panggilan Terdekat"
+  ],
+  "image": "https://kimiteknikac.github.io/logo-kimi.png",
+  "@id": "https://kimiteknikac.github.io",
+  "url": "https://kimiteknikac.github.io",
+  "telephone": "+6285810636479",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Area Jakarta Pusat & Sekitarnya",
+    "addressLocality": "Jakarta",
+    "addressRegion": "DKI Jakarta",
+    "addressCountry": "ID"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -6.1751,
+    "longitude": 106.8650
+  },
+  "areaServed": [
     {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Kimi Teknik AC",
-      "url": "https://kimiteknikac.github.io/",
-      "logo": "https://kimiteknikac.github.io/logo-kimi.png", 
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+6285810636479",
-        "contactType": "Sales",
-        "areaServed": "[Jakarta,Bekasi,Bogor,Tangerang]",
-        "availableLanguage": ["id", "en"]
-      },
-      "sameAs": [
-        "https://wa.me/6285810636479"
-      ]
+      "@type": "AdministrativeArea",
+      "name": "Jakarta Pusat",
+      "description": "Layanan Service AC Terdekat Kemayoran, Senen, Menteng, Sawah Besar, Cempaka Putih, Gambir, Tanah Abang, Johar Baru"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Jakarta Selatan",
+      "description": "Layanan Service AC Terdekat Tebet, Setiabudi, Kebayoran Baru, Kebayoran Lama, Cilandak, Pasar Minggu, Mampang Prapatan, Pancoran, Jagakarsa, Pesanggrahan"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Jakarta Utara",
+      "description": "Layanan Service AC Terdekat Kelapa Gading, Sunter, Tanjung Priok, Pademangan, Penjaringan, Cilincing, Koja"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Jakarta Timur",
+      "description": "Layanan Service AC Terdekat Pulo Gadung, Jatinegara, Matraman, Cakung, Duren Sawit, Makasar, Ciracas, Kramat Jati, Cipayung, Pasar Rebo"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Jakarta Barat",
+      "description": "Layanan Service AC Terdekat Kebon Jeruk, Cengkareng, Grogol Petamburan, Taman Sari, Palmerah, Kembangan, Kalideres"
     }
-    </script>
+  ],
+  "description": "Kimi Teknik AC: Jasa Service AC Terdekat di Kemayoran, Senen, Tebet, Kelapa Gading dan seluruh Jakarta. Spesialis perbaikan, cuci AC, bongkar pasang, dan isi freon untuk unit AC Split Wall, Cassette, Standing Floor, Split Duct, dan VRV/VRF.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Layanan Service AC Spesifik Lokasi",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Service AC Terdekat Jakarta Pusat (Kemayoran, Menteng, Senen)"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Service AC Terdekat Jakarta Selatan (Tebet, Setiabudi, Kebayoran)"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Service AC Terdekat Jakarta Utara (Kelapa Gading, Sunter, Priok)"
+        }
+      }
+    ]
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "08:00",
+    "closes": "20:00"
+  },
+  "sameAs": [
+    "https://wa.me/6285810636479"
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -355,6 +429,7 @@
 </body>
 
 </html>
+
 
 
 
